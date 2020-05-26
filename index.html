@@ -32,7 +32,7 @@
     <div id="nav">
         <div class="nav-img" id="nav-img"></div>
         <div class="sentences">
-            How goes the world with you?
+            时光荏苒，旦夕之间，略有遗憾，似白驹过隙，蹉跎自悟。
         </div>
     </div>
 </header>
@@ -42,6 +42,56 @@
         <div class="clearfix">
     
     <div id="recent-posts">
+        
+            <div class="post-item">
+                <h1>
+                    <a href="/2020/05/26/hexo教程（三）——使用hexo上传博客至Github/">
+                        hexo教程（三）——使用hexo上传博客至Github
+                    </a>
+                </h1>
+                <div class="create">
+                    <span>Created</span>
+                    
+                        <time datetime="2020-05-26T06:41:44.109Z">
+                            2020-05-26
+                        </time>
+                    
+                    
+                </div>
+                
+                    <hr>
+<p>title: hexo教程（三）——使用hexo上传博客至Github<br>date: 2020-05-26 14:41:44<br>tags:<br>—上传博客<br>新建文章<br>在Git Bash中输入hexo new title，其中，title就是我们这篇文章的名字，如下图所示。我们可以看到，在\Blog\hexo\source_posts\ 文件夹中新建了一个名称为Test1.md的文件</p>
+<p><a href="https://imgchr.com/i/kC04hj" target="_blank" rel="noopener">https://imgchr.com/i/kC04hj</a></p>
+<p>我们去编辑一下这个文件<br>【注】此处需要Linux的部分知识，可以自行上网查找</p>
+<p><a href="https://imgchr.com/i/kC0Tcq" target="_blank" rel="noopener">https://imgchr.com/i/kC0Tcq</a></p>
+<p>到了这里，想必大家一定是有了Linux vi的部分基础。进入文件后，我们可以看到这篇文章已经由hexo帮助咱们生成了部分信息</p>
+<p><a href="https://imgchr.com/i/kC0o3n" target="_blank" rel="noopener">https://imgchr.com/i/kC0o3n</a></p>
+<p>我们可以自己添加tags，并使用MarkDown语法进行文本内容的编辑。<br>【注】生成信息中的:与字母之间，一定要有一个空格，否则在后面会报错</p>
+<p><a href="https://imgchr.com/i/kC07j0" target="_blank" rel="noopener">https://imgchr.com/i/kC07j0</a></p>
+<p>编辑结束后，保存退出</p>
+<p>上传<br>使用hexo g，生成静态文件</p>
+<p><a href="https://imgchr.com/i/kC0qBT" target="_blank" rel="noopener">https://imgchr.com/i/kC0qBT</a></p>
+<p>【注】我这里报错</p>
+<p>ERROR Plugin load failed: hexo-deployer-git<br>Error: EISDIR: illegal operation on a directory, read</p>
+<p><a href="https://imgchr.com/i/kC0buV" target="_blank" rel="noopener">https://imgchr.com/i/kC0buV</a></p>
+<p>执行npm install hexo-deployer-git –-save，解决问题</p>
+<p><a href="https://imgchr.com/i/kC0XEF" target="_blank" rel="noopener">https://imgchr.com/i/kC0XEF</a></p>
+<p>使用hexo d来将文档部署到Github上，如图所示</p>
+<p><a href="https://imgchr.com/i/kCBS3R" target="_blank" rel="noopener">https://imgchr.com/i/kCBS3R</a></p>
+<p>最后我们访问username.github.io，发现刚才编辑的文档已经成功发布到了Internet上面</p>
+<p><a href="https://imgchr.com/i/kCBAED" target="_blank" rel="noopener">https://imgchr.com/i/kCBAED</a></p>
+<p>现在，我们已经可以将本地写好的文档上传至Internet中的博客。其他功能比如主页的主题，如何添加评论功能，如何统计访客数量，我们择日再谈。</p>
+<p>【博主说】<br>总是会出现各种问题，在上面谈到的这个Error：</p>
+<p>ERROR Plugin load failed: hexo-deployer-git<br>Error: EISDIR: illegal operation on a directory, read<br>在之前几次安装中从未出现，最近一次安装才有这种问题，出问题的原因也不明，只好遇到了就去网上检索，看看如何处理。</p>
+<p>命运多舛Orz</p>
+
+                
+                <div class="readmore">
+                    <a href="/2020/05/26/hexo教程（三）——使用hexo上传博客至Github/">
+                        Read More
+                    </a>
+                </div>
+            </div>
         
             <div class="post-item">
                 <h1>
