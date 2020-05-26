@@ -1,74 +1,155 @@
-{% extends 'includes/layout.njk' %}
 
-{% block main %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Archives: 12/2019: 2019 | 翟浩浩的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+        <link rel="icon" href="/favicon.ico">
+    
+    
+        
+            <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+        
+            <link rel="stylesheet" href="/css/stage.css">
+        
+            <link rel="stylesheet" href="/css/avatar-bg.css">
+        
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
 
-
-    {% set categoriesList = list_categories({ show_count: false }) %}
-    {% set tagsList = list_tags({ show_count: false }) %}
-    {% set archivesList = list_archives({ show_count: false }) %}
-
-    <div id="archive">
-        <div class="container">
-            {% if not is_year() %}
-                <div id="archive-all" class="center">
-                    <aside>
-                        <h5>Categories</h5>
-                        {% if categoriesList %}
-                            {{ categoriesList }}
-                        {% else %}
-                            <p>None.</p>
-                        {% endif %}
-                    </aside>
-                    <br>
-
-                    <aside>
-                        <h5>Tags</h5>
-                        {% if tagsList %}
-                            {{ tagsList }}
-                        {% else %}
-                            <p>None.</p>
-                        {% endif %}
-                    </aside>
-                    <br>
-
-                    <aside>
-                        <h5>Archives</h5>
-                        {% if archivesList %}
-                            {{ archivesList }}
-                        {% else %}
-                            <p>None.</p>
-                        {% endif %}
-                    </aside>
-                </div>
-            {% else %}
-                <div id="archive-year" class="center">
-                    <h5>{{ page.month + '/' + page.year }}</h5>
-
-                    <div class="posts">
-                    {% for postItem in page.posts.toArray() %}
-                        <div class="archive-item">
-                            {% if postItem.link %}
-                                <!-- external link -->
-                                <a href="{{ url_for(postItem.link) }}" target="_blank">
-                                    {{ postItem.title or 'No Title' }}
-                                </a>
-                            {% endif %}
-
-                            {% if not postItem.link %}
-                                <!-- internal link -->
-                                <a href="{{ url_for(postItem.path) }}">
-                                    {{ postItem.title or 'No Title' }}
-                                </a>
-                            {% endif %}
-
-                            <time datetime="{{ date_xml(postItem.date) }}">
-                                {{ date(postItem.date) }}
-                            </time>
-                        </div>
-                    {% endfor %}</div>
-                </div>
-            {% endif %}
+<body>
+<header id="header">
+    <div class="menu">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="header-main">
+        <h1><a href="/">翟浩浩的博客</a></h1>
+    </div>
+    <div id="nav">
+        <div class="nav-img" id="nav-img"></div>
+        <div class="sentences">
+            云里写诗，泥里生活，岁月里洒脱。
         </div>
     </div>
-    {% include 'includes/pagination.njk' %}
-{% endblock %}
+</header>
+
+<div id="content-outer">
+    <div id="content-inner">
+        <div class="clearfix">
+    <div id="archive">
+        <h1>12/2019</h1>
+        
+        <div class="item">
+            <h3>
+                <time datetime="2019-12-26T10:25:45.873Z">
+                    2019-12-26
+                </time>
+                
+                <!-- internal link -->
+                <a href="/2019/12/26/hello-world/">
+                    Hello World
+                </a>
+                
+            </h3>
+        </div>
+        
+    </div>
+    <div id="content-aside">
+    <div class="content-aside-owner">
+        <div id="owner">
+    <div class="avatar-bg">
+        <div class="index-page">
+            <div class="banner">
+                <div class="slide slide1">
+                    <div class="bg-wrapper">
+                        <div class="bg" id="container_left">
+                            <div id="canvas_left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="bg-wrapper">
+                        <div class="bg" id="container_right">
+                            <div id="canvas_right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/"><img class="avatar" src="/images/avatar.jpg" alt=""></a>
+    <a href="/"><h3 class="author">浩</h3></a>
+    <h4></h4>
+    <div class="social">
+        
+            
+              <a href="https://github.com/markyong" title="github" class="fa fa-github" target="_blank"></a>
+            
+        
+            
+              <a href="#" title="weibo" class="fa fa-weibo" target="_blank"></a>
+            
+        
+    </div>
+</div>
+    </div>
+    
+        <div class="content-aside-about">
+            <h2>
+                <a href="/about">About</a>
+            </h2>
+        </div>
+    
+    <div class="content-aside-tags">
+        <h2>
+            <a href="/tags">
+                Tags
+                <sup style="font-size: 12px">
+                    [3]
+                </sup>
+            </a>
+        </h2>
+    </div>
+    
+<aside id="categories">
+    <h2>Categories</h2>
+    
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a></li></ul>
+    
+</aside>
+
+    
+<aside id="acchives">
+    <h2>Archives</h2>
+    
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">December 2013</a></li></ul>
+    
+</aside>
+
+</div>
+
+</div>
+<div id="archive-paginator" class="clearfix">
+    <span class="page-number current">1</span>
+</div>
+
+    </div>
+</div>
+<footer id="footer">
+    <div id="copyright">&copy; 浩  2020</div>
+    <div id="theme">
+        Powered by <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a>. Theme by <a href="https://github.com/markyong/hexo-theme-stage" target="_blank" rel="noopener">Stage</a>
+    </div>
+</footer>
+<script src="/lib/js/waterrippleeffect.min.js"></script>
+<script src="/js/header-bg.main.js"></script>
+
+    <script src="/lib/js/cav.js"></script>
+    <script src="/js/avatar-bg.main.js"></script>
+
+</body>
+</html>
